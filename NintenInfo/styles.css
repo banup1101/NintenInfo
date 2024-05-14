@@ -1,0 +1,150 @@
+/*
+Author: Brandon Anup
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Style rule for images */
+img{
+	width: 100%;
+	display: block;
+	max-height: 300px;
+	margin: 0;
+}
+
+/* Style rules for header content */
+header{
+	text-align: center;
+	font-size: 3em;
+	color: #e93440;
+}
+
+header h1{
+	font-style: italic;
+}
+
+/*Style rules for navigation area */
+nav{
+	background-color:  #e7212e;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	text-align: center;
+}
+
+nav li{
+	display: inline-block;
+	font-size: 2em;
+}
+
+nav li a{
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+/* Style rules for main content */
+main{
+	padding: 2%;
+	background-color: #e93440;
+	overflow: auto;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+main p{
+	font-size: 1.25em;
+	color: #fff;
+}
+
+h3{
+	font-size: 1em;
+	font-weight: bold;
+	font-style: oblique;
+	color: black;
+}
+
+
+/* Style rules for footer content */
+footer{
+	text-align: center;
+	font-size: 0.65em;
+	clear: left;
+}
+
+footer a{
+	color:  #e93440;
+	text-decoration: none;
+}	
+
+
+/* Style rules for carousel */
+.carousel-container{
+	background-color: #e93440;
+}
+
+
+.carousel-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.carousel {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    margin: 0 auto; 
+}
+
+.carousel-slide {
+    display: none;
+    position: relative;
+}
+
+.carousel-slide img {
+    width: 100%; 
+    height: 100%; 
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style Rules for Card */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* This gives me 3 equal columns */
+    gap: 20px; /* This is the space between the cards */
+}
+
+.card {
+	box-shadow: 0 10px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	width: 100%;
+  }
+  
+  .card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+	padding: 2px 5px;
+  }
